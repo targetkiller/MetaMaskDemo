@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "ilgmyzin",
+            "avatar": "ilgmyzin"
+        },
+        {
+            "id": "2",
+            "name": "ant-rozetsky",
+            "avatar": "ant-rozetsky"
+        },
+        {
+            "id": "3",
+            "name": "evgeny-ozerov",
+            "avatar": "evgeny-ozerov"
+        },
+        {
+            "id": "4",
+            "name": "tandem",
+            "avatar": "tandem"
+        }
+    ]
+}

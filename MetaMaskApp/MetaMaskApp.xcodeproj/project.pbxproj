@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		829A0E0C2893EF06006220BF /* MetaMaskAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E0B2893EF06006220BF /* MetaMaskAppApp.swift */; };
-		829A0E0E2893EF06006220BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E0D2893EF06006220BF /* ContentView.swift */; };
+		829A0E0C2893EF06006220BF /* MetaMaskMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E0B2893EF06006220BF /* MetaMaskMain.swift */; };
 		829A0E102893EF0B006220BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A0E0F2893EF0B006220BF /* Assets.xcassets */; };
 		829A0E132893EF0B006220BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A0E122893EF0B006220BF /* Preview Assets.xcassets */; };
 		829A0E1D2893EF0B006220BF /* MetaMaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E1C2893EF0B006220BF /* MetaMaskAppTests.swift */; };
 		829A0E272893EF0B006220BF /* MetaMaskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E262893EF0B006220BF /* MetaMaskAppUITests.swift */; };
 		829A0E292893EF0B006220BF /* MetaMaskAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E282893EF0B006220BF /* MetaMaskAppUITestsLaunchTests.swift */; };
+		829A0E3A2893F25B006220BF /* MMDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E392893F25B006220BF /* MMDefine.swift */; };
+		829A0E3E2893F36B006220BF /* MMNFTProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E3D2893F36B006220BF /* MMNFTProvider.swift */; };
+		829A0E522893F61B006220BF /* MMHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E512893F61B006220BF /* MMHomeView.swift */; };
+		829A0E542893F725006220BF /* MMTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E532893F725006220BF /* MMTokenProvider.swift */; };
+		829A0E56289415CB006220BF /* MMHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E55289415CB006220BF /* MMHomeHeaderView.swift */; };
+		829A0E5A28944383006220BF /* MMDataMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E5928944383006220BF /* MMDataMockProvider.swift */; };
+		829A0E5C28945244006220BF /* MMHomeTabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E5B28945244006220BF /* MMHomeTabContainerView.swift */; };
+		829A0E5E28945373006220BF /* MMHomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E5D28945373006220BF /* MMHomeAction.swift */; };
+		829A0E622894555F006220BF /* MMActionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E612894555F006220BF /* MMActionHelper.swift */; };
+		829A0E642894579F006220BF /* MMHomeTokenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E632894579F006220BF /* MMHomeTokenListView.swift */; };
+		829A0E66289457AB006220BF /* MMHomeNFTListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E65289457AB006220BF /* MMHomeNFTListView.swift */; };
+		829A0E6C28945EB9006220BF /* MMHomeTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E6B28945EB9006220BF /* MMHomeTabModel.swift */; };
+		829A0E6E28946BC0006220BF /* MMHomeTabEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E6D28946BC0006220BF /* MMHomeTabEnvironment.swift */; };
+		829A0E712895026A006220BF /* MMTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E702895026A006220BF /* MMTokenModel.swift */; };
+		829A0E7328950271006220BF /* MMNFTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E7228950271006220BF /* MMNFTModel.swift */; };
+		829A0E75289502A8006220BF /* MMUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E74289502A8006220BF /* MMUserModel.swift */; };
+		829A0E7728950DE6006220BF /* MMTokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E7628950DE6006220BF /* MMTokenCell.swift */; };
+		829A0E792895116D006220BF /* MMNFTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E782895116D006220BF /* MMNFTCell.swift */; };
+		829A0E7C28951416006220BF /* NFTMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 829A0E7B28951416006220BF /* NFTMock.json */; };
+		829A0E8E289527A0006220BF /* MMTokenDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E8D289527A0006220BF /* MMTokenDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +54,7 @@
 
 /* Begin PBXFileReference section */
 		829A0E082893EF06006220BF /* MetaMaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaMaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		829A0E0B2893EF06006220BF /* MetaMaskAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskAppApp.swift; sourceTree = "<group>"; };
-		829A0E0D2893EF06006220BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		829A0E0B2893EF06006220BF /* MetaMaskMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskMain.swift; sourceTree = "<group>"; };
 		829A0E0F2893EF0B006220BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		829A0E122893EF0B006220BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		829A0E182893EF0B006220BF /* MetaMaskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaMaskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +62,26 @@
 		829A0E222893EF0B006220BF /* MetaMaskAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaMaskAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		829A0E262893EF0B006220BF /* MetaMaskAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskAppUITests.swift; sourceTree = "<group>"; };
 		829A0E282893EF0B006220BF /* MetaMaskAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		829A0E392893F25B006220BF /* MMDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDefine.swift; sourceTree = "<group>"; };
+		829A0E3D2893F36B006220BF /* MMNFTProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMNFTProvider.swift; sourceTree = "<group>"; };
+		829A0E512893F61B006220BF /* MMHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeView.swift; sourceTree = "<group>"; };
+		829A0E532893F725006220BF /* MMTokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTokenProvider.swift; sourceTree = "<group>"; };
+		829A0E55289415CB006220BF /* MMHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeHeaderView.swift; sourceTree = "<group>"; };
+		829A0E5928944383006220BF /* MMDataMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDataMockProvider.swift; sourceTree = "<group>"; };
+		829A0E5B28945244006220BF /* MMHomeTabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeTabContainerView.swift; sourceTree = "<group>"; };
+		829A0E5D28945373006220BF /* MMHomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeAction.swift; sourceTree = "<group>"; };
+		829A0E612894555F006220BF /* MMActionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMActionHelper.swift; sourceTree = "<group>"; };
+		829A0E632894579F006220BF /* MMHomeTokenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeTokenListView.swift; sourceTree = "<group>"; };
+		829A0E65289457AB006220BF /* MMHomeNFTListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeNFTListView.swift; sourceTree = "<group>"; };
+		829A0E6B28945EB9006220BF /* MMHomeTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeTabModel.swift; sourceTree = "<group>"; };
+		829A0E6D28946BC0006220BF /* MMHomeTabEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHomeTabEnvironment.swift; sourceTree = "<group>"; };
+		829A0E702895026A006220BF /* MMTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenModel.swift; sourceTree = "<group>"; };
+		829A0E7228950271006220BF /* MMNFTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMNFTModel.swift; sourceTree = "<group>"; };
+		829A0E74289502A8006220BF /* MMUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMUserModel.swift; sourceTree = "<group>"; };
+		829A0E7628950DE6006220BF /* MMTokenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenCell.swift; sourceTree = "<group>"; };
+		829A0E782895116D006220BF /* MMNFTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMNFTCell.swift; sourceTree = "<group>"; };
+		829A0E7B28951416006220BF /* NFTMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NFTMock.json; sourceTree = "<group>"; };
+		829A0E8D289527A0006220BF /* MMTokenDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +132,11 @@
 		829A0E0A2893EF06006220BF /* MetaMaskApp */ = {
 			isa = PBXGroup;
 			children = (
-				829A0E0B2893EF06006220BF /* MetaMaskAppApp.swift */,
-				829A0E0D2893EF06006220BF /* ContentView.swift */,
-				829A0E0F2893EF0B006220BF /* Assets.xcassets */,
+				829A0E0B2893EF06006220BF /* MetaMaskMain.swift */,
+				829A0E6F28950259006220BF /* Model */,
+				829A0E362893F149006220BF /* Common */,
+				829A0E352893F13C006220BF /* Module */,
+				829A0E7A289513C6006220BF /* Resources */,
 				829A0E112893EF0B006220BF /* Preview Content */,
 			);
 			path = MetaMaskApp;
@@ -125,6 +165,191 @@
 				829A0E282893EF0B006220BF /* MetaMaskAppUITestsLaunchTests.swift */,
 			);
 			path = MetaMaskAppUITests;
+			sourceTree = "<group>";
+		};
+		829A0E352893F13C006220BF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E4B2893F57E006220BF /* TokenAdd */,
+				829A0E482893F55D006220BF /* TokenDetail */,
+				829A0E452893F52C006220BF /* Scan */,
+				829A0E422893F50D006220BF /* Sidecar */,
+				829A0E3F2893F490006220BF /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		829A0E362893F149006220BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E382893F239006220BF /* Util */,
+				829A0E372893F22E006220BF /* Define */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		829A0E372893F22E006220BF /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E392893F25B006220BF /* MMDefine.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		829A0E382893F239006220BF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E532893F725006220BF /* MMTokenProvider.swift */,
+				829A0E3D2893F36B006220BF /* MMNFTProvider.swift */,
+				829A0E5928944383006220BF /* MMDataMockProvider.swift */,
+				829A0E612894555F006220BF /* MMActionHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		829A0E3F2893F490006220BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E412893F509006220BF /* View */,
+				829A0E402893F4FE006220BF /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		829A0E402893F4FE006220BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E5D28945373006220BF /* MMHomeAction.swift */,
+				829A0E6B28945EB9006220BF /* MMHomeTabModel.swift */,
+				829A0E6D28946BC0006220BF /* MMHomeTabEnvironment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		829A0E412893F509006220BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E512893F61B006220BF /* MMHomeView.swift */,
+				829A0E55289415CB006220BF /* MMHomeHeaderView.swift */,
+				829A0E5B28945244006220BF /* MMHomeTabContainerView.swift */,
+				829A0E632894579F006220BF /* MMHomeTokenListView.swift */,
+				829A0E65289457AB006220BF /* MMHomeNFTListView.swift */,
+				829A0E7628950DE6006220BF /* MMTokenCell.swift */,
+				829A0E782895116D006220BF /* MMNFTCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		829A0E422893F50D006220BF /* Sidecar */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E442893F523006220BF /* View */,
+				829A0E432893F51B006220BF /* Model */,
+			);
+			path = Sidecar;
+			sourceTree = "<group>";
+		};
+		829A0E432893F51B006220BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		829A0E442893F523006220BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		829A0E452893F52C006220BF /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E472893F556006220BF /* View */,
+				829A0E462893F552006220BF /* Model */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		829A0E462893F552006220BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		829A0E472893F556006220BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		829A0E482893F55D006220BF /* TokenDetail */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E4A2893F570006220BF /* View */,
+				829A0E492893F56C006220BF /* Model */,
+			);
+			path = TokenDetail;
+			sourceTree = "<group>";
+		};
+		829A0E492893F56C006220BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		829A0E4A2893F570006220BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E8D289527A0006220BF /* MMTokenDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		829A0E4B2893F57E006220BF /* TokenAdd */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E4D2893F588006220BF /* View */,
+				829A0E4C2893F585006220BF /* Model */,
+			);
+			path = TokenAdd;
+			sourceTree = "<group>";
+		};
+		829A0E4C2893F585006220BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		829A0E4D2893F588006220BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		829A0E6F28950259006220BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E702895026A006220BF /* MMTokenModel.swift */,
+				829A0E7228950271006220BF /* MMNFTModel.swift */,
+				829A0E74289502A8006220BF /* MMUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		829A0E7A289513C6006220BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				829A0E0F2893EF0B006220BF /* Assets.xcassets */,
+				829A0E7B28951416006220BF /* NFTMock.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				829A0E132893EF0B006220BF /* Preview Assets.xcassets in Resources */,
+				829A0E7C28951416006220BF /* NFTMock.json in Resources */,
 				829A0E102893EF0B006220BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +483,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829A0E0E2893EF06006220BF /* ContentView.swift in Sources */,
-				829A0E0C2893EF06006220BF /* MetaMaskAppApp.swift in Sources */,
+				829A0E6E28946BC0006220BF /* MMHomeTabEnvironment.swift in Sources */,
+				829A0E5C28945244006220BF /* MMHomeTabContainerView.swift in Sources */,
+				829A0E3E2893F36B006220BF /* MMNFTProvider.swift in Sources */,
+				829A0E56289415CB006220BF /* MMHomeHeaderView.swift in Sources */,
+				829A0E622894555F006220BF /* MMActionHelper.swift in Sources */,
+				829A0E66289457AB006220BF /* MMHomeNFTListView.swift in Sources */,
+				829A0E3A2893F25B006220BF /* MMDefine.swift in Sources */,
+				829A0E8E289527A0006220BF /* MMTokenDetailView.swift in Sources */,
+				829A0E542893F725006220BF /* MMTokenProvider.swift in Sources */,
+				829A0E75289502A8006220BF /* MMUserModel.swift in Sources */,
+				829A0E792895116D006220BF /* MMNFTCell.swift in Sources */,
+				829A0E642894579F006220BF /* MMHomeTokenListView.swift in Sources */,
+				829A0E5A28944383006220BF /* MMDataMockProvider.swift in Sources */,
+				829A0E0C2893EF06006220BF /* MetaMaskMain.swift in Sources */,
+				829A0E6C28945EB9006220BF /* MMHomeTabModel.swift in Sources */,
+				829A0E712895026A006220BF /* MMTokenModel.swift in Sources */,
+				829A0E5E28945373006220BF /* MMHomeAction.swift in Sources */,
+				829A0E7328950271006220BF /* MMNFTModel.swift in Sources */,
+				829A0E522893F61B006220BF /* MMHomeView.swift in Sources */,
+				829A0E7728950DE6006220BF /* MMTokenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -424,6 +668,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +697,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
