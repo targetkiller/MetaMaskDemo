@@ -36,7 +36,7 @@ struct MMHomeView: View {
                 .navigationBarItems(
                     leading: Button(action: {
                         withAnimation {
-                            self.showMenu = true
+                            self.showMenu.toggle()
                         }
                     }, label: {
                         Image(systemName: "line.horizontal.3")
@@ -53,22 +53,22 @@ struct MMHomeView: View {
                     })
                 )
             }
+            .disabled(self.showMenu)
             .ignoresSafeArea()
             
-            if self.showMenu == true {
-                Button {
+            Rectangle()
+                .fill(Color.black)
+                .frame(maxWidth: .infinity,
+                       maxHeight: .infinity,
+                       alignment: .leading)
+                .ignoresSafeArea()
+                .blur(radius: 10)
+                .opacity(self.showMenu ? 0.5 : 0)
+                .onTapGesture {
                     withAnimation {
-                        self.showMenu = false
+                        self.showMenu.toggle()
                     }
-                } label: {
-                    Rectangle()
-                        .fill(Color.black.opacity(0.5))
-                        .frame(maxWidth: .infinity,
-                               maxHeight: .infinity,
-                               alignment: .leading)
-                        .ignoresSafeArea()
                 }
-            }
             
             MMSidecarView(user: user)
                 .frame(width: UIScreen.main.bounds.size.width * 2 / 3)
