@@ -24,6 +24,11 @@ let MMStringTokenDetailEmpty: String = "您没有交易！"
 let MMStringScanTips: String = "正在扫描..."
 let MMStringScanDisableTipsTitle: String = "打开摄像头失败"
 let MMStringScanDisableTipsDesp: String = "请到系统设置重新打开摄像头权限"
+let MMStringActionWalletSend: String = "发送"
+let MMStringActionWalletCharge: String = "充值"
+let MMStringSidecarNavBrowser: String = "浏览器"
+let MMStringSidecarNavWallet: String = "钱包"
+let MMStringSidecarNavActivity: String = "活动"
 
 // Action
 let MMHomeActionList = [
@@ -40,4 +45,13 @@ let MMTokenDetailActionList = [
     MMHomeAction(title: MMStringActionReceive, icon: Image(systemName: "arrow.down")),
     MMHomeAction(title: MMStringActionSend, icon: Image(systemName: "arrow.up.right")),
     MMHomeAction(title: MMStringActionSwap, icon: Image(systemName: "rectangle.2.swap"))
+]
+let MMSidecarActionGroupList = [
+    MMHomeAction(title: MMStringActionWalletSend, icon: Image(systemName: "arrow.up.forward")),
+    MMHomeAction(title: MMStringActionWalletCharge, icon: Image(systemName: "arrow.down.to.line"))
+]
+let MMSidecarNavigationListModel = [
+    MMHomeAction(title: MMStringSidecarNavBrowser, icon: Image(systemName: "globe.europe.africa")),
+    MMHomeAction(title: MMStringSidecarNavWallet, icon: Image(systemName: "bag")),
+    MMHomeAction(title: MMStringSidecarNavActivity, icon: Image(systemName: "list.bullet"))
 ]

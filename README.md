@@ -14,7 +14,8 @@ The App is still under development, some pages can be displayed:
 
 - __HomePage__, with token list / NTF list.
 - __TokenDetail__, click the token list cell, display the token info inside.
-- __TokenScan__, click the right barButton of the HomePage.
+- __Scan__, click the right barButton of the HomePage.
+- __Sidecar__, click the left barButton of the HomePage.
 - __Copy__, click the wallet address of the HomePage profile, can copy the address.
 
 # Licens

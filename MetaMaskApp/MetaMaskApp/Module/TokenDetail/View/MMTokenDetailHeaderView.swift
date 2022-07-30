@@ -16,7 +16,7 @@ struct MMTokenDetailHeaderView: View {
             Image(systemName: "bitcoinsign.circle.fill")
                 .font(.system(size: 40))
                 .foregroundColor(Color(MMColorTitle))
-                .background(Circle().stroke(Color(MMColorTheme), lineWidth:3))
+                .background(Circle().stroke(Color(MMColorTheme), lineWidth: 3))
             
             Text(token.name)
                 .font(.system(size: 24))

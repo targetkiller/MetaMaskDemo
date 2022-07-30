@@ -13,6 +13,8 @@ struct MMHomeView: View {
                                         walletAddress: MMStringHomeAddress)
     
     @State private var showScan = false
+    @State private var showMenu = false
+    @Namespace private var sidecar
     
     init() {
         UINavigationBar.appearance().titleTextAttributes = [
@@ -22,30 +24,58 @@ struct MMHomeView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack() {
-                MMHomeHeaderView(user: user)
-                MMHomeTabContainerView()
-            }
-            .navigationBarTitle(MMStringHomeNavTitle, displayMode: .inline)
-            .navigationBarItems(
-                leading: Button(action: {
+        ZStack(alignment: .leading) {
+            NavigationView {
+                ZStack(alignment: .leading) {
+                    VStack() {
+                        MMHomeHeaderView(user: user)
+                        MMHomeTabContainerView()
+                    }
+                }
+                .navigationBarTitle(MMStringHomeNavTitle, displayMode: .inline)
+                .navigationBarItems(
+                    leading: Button(action: {
+                        withAnimation {
+                            self.showMenu = true
+                        }
+                    }, label: {
+                        Image(systemName: "line.horizontal.3")
+                            .foregroundColor(Color(MMColorTheme))
+                    }),
                     
-                }, label: {
-                    Image(systemName: "rectangle.leadinghalf.inset.filled")
-                        .foregroundColor(Color(MMColorTheme))
-                }),
-                
-                trailing: Button(action: {
-                    self.showScan.toggle()
-                }, label: {
-                    Image(systemName: "qrcode.viewfinder")
-                        .foregroundColor(Color(MMColorTheme))
-                }).fullScreenCover(isPresented: $showScan, content: {
-                    MMScanView()
-                })
-            )
-        }.ignoresSafeArea()
+                    trailing: Button(action: {
+                        self.showScan.toggle()
+                    }, label: {
+                        Image(systemName: "qrcode.viewfinder")
+                            .foregroundColor(Color(MMColorTheme))
+                    }).fullScreenCover(isPresented: $showScan, content: {
+                        MMScanView()
+                    })
+                )
+            }
+            .ignoresSafeArea()
+            
+            if self.showMenu == true {
+                Button {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                } label: {
+                    Rectangle()
+                        .fill(Color.black.opacity(0.5))
+                        .frame(maxWidth: .infinity,
+                               maxHeight: .infinity,
+                               alignment: .leading)
+                        .ignoresSafeArea()
+                }
+            }
+            
+            MMSidecarView(user: user)
+                .frame(width: UIScreen.main.bounds.size.width * 2 / 3)
+                .offset(x: self.showMenu == true ? 0 :
+                            -UIScreen.main.bounds.size.width * 2 / 3)
+                .matchedGeometryEffect(id: "sidecar", in: sidecar)
+        }
     }
 }
 

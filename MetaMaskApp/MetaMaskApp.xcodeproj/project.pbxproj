@@ -38,6 +38,10 @@
 		829A0E9428954148006220BF /* MMCameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9328954148006220BF /* MMCameraPreview.swift */; };
 		829A0E962895588E006220BF /* MMTokenEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E952895588E006220BF /* MMTokenEnvironment.swift */; };
 		829A0E982895589A006220BF /* MMNFTEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E972895589A006220BF /* MMNFTEnvironment.swift */; };
+		829A0E9A28956C6F006220BF /* MMSidecarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9928956C6E006220BF /* MMSidecarView.swift */; };
+		829A0E9C289595A2006220BF /* MMSidecarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9B289595A2006220BF /* MMSidecarHeaderView.swift */; };
+		829A0E9E28959899006220BF /* MMSidecarActionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9D28959899006220BF /* MMSidecarActionGroup.swift */; };
+		829A0EA0289598B3006220BF /* MMSidecarNavigationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9F289598B3006220BF /* MMSidecarNavigationList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,10 @@
 		829A0E9328954148006220BF /* MMCameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCameraPreview.swift; sourceTree = "<group>"; };
 		829A0E952895588E006220BF /* MMTokenEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenEnvironment.swift; sourceTree = "<group>"; };
 		829A0E972895589A006220BF /* MMNFTEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMNFTEnvironment.swift; sourceTree = "<group>"; };
+		829A0E9928956C6E006220BF /* MMSidecarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMSidecarView.swift; sourceTree = "<group>"; };
+		829A0E9B289595A2006220BF /* MMSidecarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMSidecarHeaderView.swift; sourceTree = "<group>"; };
+		829A0E9D28959899006220BF /* MMSidecarActionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMSidecarActionGroup.swift; sourceTree = "<group>"; };
+		829A0E9F289598B3006220BF /* MMSidecarNavigationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMSidecarNavigationList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +279,10 @@
 		829A0E442893F523006220BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				829A0E9928956C6E006220BF /* MMSidecarView.swift */,
+				829A0E9B289595A2006220BF /* MMSidecarHeaderView.swift */,
+				829A0E9D28959899006220BF /* MMSidecarActionGroup.swift */,
+				829A0E9F289598B3006220BF /* MMSidecarNavigationList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +511,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				829A0E6E28946BC0006220BF /* MMHomeTabEnvironment.swift in Sources */,
+				829A0EA0289598B3006220BF /* MMSidecarNavigationList.swift in Sources */,
+				829A0E9E28959899006220BF /* MMSidecarActionGroup.swift in Sources */,
 				829A0E5C28945244006220BF /* MMHomeTabContainerView.swift in Sources */,
 				829A0E3E2893F36B006220BF /* MMNFTProvider.swift in Sources */,
 				829A0E962895588E006220BF /* MMTokenEnvironment.swift in Sources */,
@@ -514,12 +528,14 @@
 				829A0E792895116D006220BF /* MMNFTCell.swift in Sources */,
 				829A0E642894579F006220BF /* MMHomeTokenListView.swift in Sources */,
 				829A0E5A28944383006220BF /* MMDataMockProvider.swift in Sources */,
+				829A0E9C289595A2006220BF /* MMSidecarHeaderView.swift in Sources */,
 				829A0E0C2893EF06006220BF /* MetaMaskMain.swift in Sources */,
 				829A0E6C28945EB9006220BF /* MMHomeTabModel.swift in Sources */,
 				829A0E712895026A006220BF /* MMTokenModel.swift in Sources */,
 				829A0E9028952F3B006220BF /* MMTokenDetailHeaderView.swift in Sources */,
 				829A0E5E28945373006220BF /* MMHomeAction.swift in Sources */,
 				829A0E7328950271006220BF /* MMNFTModel.swift in Sources */,
+				829A0E9A28956C6F006220BF /* MMSidecarView.swift in Sources */,
 				829A0E522893F61B006220BF /* MMHomeView.swift in Sources */,
 				829A0E7728950DE6006220BF /* MMTokenCell.swift in Sources */,
 				829A0E982895589A006220BF /* MMNFTEnvironment.swift in Sources */,

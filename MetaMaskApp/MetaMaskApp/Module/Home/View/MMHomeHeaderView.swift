@@ -11,12 +11,14 @@ struct MMHomeHeaderView: View {
     var user: MMUserModel!
     var body: some View {
         VStack(alignment: .center, spacing: 14) {
-            Text("").padding(.top, 5)
+            Rectangle()
+                .fill(Color.clear)
+                .frame(height: 5)
             
             Image(systemName: "bitcoinsign.circle.fill")
                 .font(.system(size: 40))
                 .foregroundColor(Color(MMColorTitle))
-                .background(Circle().stroke(Color(MMColorTheme), lineWidth:3))
+                .background(Circle().stroke(Color(MMColorTheme), lineWidth: 3))
             
             Text(user.name)
                 .font(.system(size: 24))

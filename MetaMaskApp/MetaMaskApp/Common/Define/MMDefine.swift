@@ -16,6 +16,7 @@ let MMColorEmptyTips: UIColor = UIColor(red: 90 / 255, green: 90 / 255, blue: 90
 let MMColorAddressForeground: UIColor = UIColor(red: 36 / 255, green: 43 / 255, blue: 49 / 255, alpha: 1)
 let MMColorAddressBackground: UIColor = MMColorTheme.withAlphaComponent(0.1)
 let MMColorSeparator: UIColor = UIColor.gray.withAlphaComponent(0.15)
+let MMColorSidecarHeaderBackground: UIColor = UIColor.gray.withAlphaComponent(0.1)
 
 
 // Fonts
