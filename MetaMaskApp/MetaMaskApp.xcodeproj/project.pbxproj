@@ -681,7 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaMaskApp/Preview Content\"";
-				DEVELOPMENT_TEAM = G77ZRMVS8N;
+				DEVELOPMENT_TEAM = 5LXH69K3C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera just for demo.";
@@ -696,7 +696,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tq.metamask.MetaMaskApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tqtan.metamask.MetaMaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -712,7 +712,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaMaskApp/Preview Content\"";
-				DEVELOPMENT_TEAM = G77ZRMVS8N;
+				DEVELOPMENT_TEAM = 5LXH69K3C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera just for demo.";
@@ -727,7 +727,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tq.metamask.MetaMaskApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tqtan.metamask.MetaMaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
