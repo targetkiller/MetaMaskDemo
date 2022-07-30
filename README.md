@@ -12,9 +12,10 @@ Some assets in this project is using [SFSymbol](https://developer.apple.com/desi
 # Pages
 The App is still under development, some pages can be displayed:
 
-- **HomePage**, with token list / NTF list.
-- **TokenDetail**, click the token list cell, display the token info inside.
-- **TokenScan**, click the right barButton of the HomePage.
+- __HomePage__, with token list / NTF list.
+- __TokenDetail__, click the token list cell, display the token info inside.
+- __TokenScan__, click the right barButton of the HomePage.
+- __Copy__, click the wallet address of the HomePage profile, can copy the address.
 
 # Licens
 MIT License.
