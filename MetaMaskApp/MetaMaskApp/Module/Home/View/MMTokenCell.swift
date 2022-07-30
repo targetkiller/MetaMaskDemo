@@ -17,14 +17,12 @@ struct MMTokenCell: View {
                     .padding(.leading, 16)
                     .foregroundColor(Color(MMColorTheme))
                 
-                VStack(alignment: .leading, spacing: 0) {
+                VStack(alignment: .leading, spacing: 4) {
                     Text(item.name)
-                        .padding(.top, 2)
                         .font(.system(size: 16, weight: .medium))
                         .foregroundColor(Color(MMColorTitle))
                     
-                    Text(item.priceUsd)
-                        .padding(.bottom, 1)
+                    Text("$\(item.priceUsd)")
                         .font(.system(size: 13, weight: .light))
                         .foregroundColor(Color(MMColorSubtitle))
                 }

@@ -37,8 +37,8 @@ struct MMHomeHeaderAddress: View {
     @State private var showCopy = false
     var body: some View {
         Button {
-            showCopy = true
-            doCopyAction(walletAddress)
+            self.showCopy.toggle()
+            MMActionHelper().doCopyAction(walletAddress)
         } label: {
             Text(walletAddress)
                 .font(.system(size: 14, weight: .light))

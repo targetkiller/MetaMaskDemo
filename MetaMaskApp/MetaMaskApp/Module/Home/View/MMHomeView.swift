@@ -11,6 +11,9 @@ struct MMHomeView: View {
     let user: MMUserModel = MMUserModel(name: MMStringHomeAccountName,
                                         balance: MMStringHomeAccountBalance,
                                         walletAddress: MMStringHomeAddress)
+    
+    @State private var showScan = false
+    
     init() {
         UINavigationBar.appearance().titleTextAttributes = [
             .foregroundColor: MMColorTitle,
@@ -34,10 +37,12 @@ struct MMHomeView: View {
                 }),
                 
                 trailing: Button(action: {
-                    
+                    self.showScan.toggle()
                 }, label: {
                     Image(systemName: "qrcode.viewfinder")
                         .foregroundColor(Color(MMColorTheme))
+                }).fullScreenCover(isPresented: $showScan, content: {
+                    MMScanView()
                 })
             )
         }.ignoresSafeArea()

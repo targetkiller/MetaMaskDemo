@@ -13,8 +13,11 @@ struct MMTokenDetailView: View {
     var body: some View {
         NavigationView {
             VStack() {
+                MMTokenDetailHeaderView(token: token)
                 Spacer()
-                Text(token.name)
+                Text(MMStringTokenDetailEmpty)
+                    .font(.system(size: 18))
+                    .foregroundColor(Color(MMColorEmptyTips))
                 Spacer()
             }
             .navigationBarTitle(token.name, displayMode: .inline)

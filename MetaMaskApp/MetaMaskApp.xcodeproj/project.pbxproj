@@ -33,6 +33,9 @@
 		829A0E792895116D006220BF /* MMNFTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E782895116D006220BF /* MMNFTCell.swift */; };
 		829A0E7C28951416006220BF /* NFTMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 829A0E7B28951416006220BF /* NFTMock.json */; };
 		829A0E8E289527A0006220BF /* MMTokenDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E8D289527A0006220BF /* MMTokenDetailView.swift */; };
+		829A0E9028952F3B006220BF /* MMTokenDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E8F28952F3B006220BF /* MMTokenDetailHeaderView.swift */; };
+		829A0E922895311D006220BF /* MMScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E912895311D006220BF /* MMScanView.swift */; };
+		829A0E9428954148006220BF /* MMCameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9328954148006220BF /* MMCameraPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		829A0E782895116D006220BF /* MMNFTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMNFTCell.swift; sourceTree = "<group>"; };
 		829A0E7B28951416006220BF /* NFTMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NFTMock.json; sourceTree = "<group>"; };
 		829A0E8D289527A0006220BF /* MMTokenDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenDetailView.swift; sourceTree = "<group>"; };
+		829A0E8F28952F3B006220BF /* MMTokenDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenDetailHeaderView.swift; sourceTree = "<group>"; };
+		829A0E912895311D006220BF /* MMScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMScanView.swift; sourceTree = "<group>"; };
+		829A0E9328954148006220BF /* MMCameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCameraPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +288,8 @@
 		829A0E472893F556006220BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				829A0E912895311D006220BF /* MMScanView.swift */,
+				829A0E9328954148006220BF /* MMCameraPreview.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				829A0E8D289527A0006220BF /* MMTokenDetailView.swift */,
+				829A0E8F28952F3B006220BF /* MMTokenDetailHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,7 +495,9 @@
 				829A0E6E28946BC0006220BF /* MMHomeTabEnvironment.swift in Sources */,
 				829A0E5C28945244006220BF /* MMHomeTabContainerView.swift in Sources */,
 				829A0E3E2893F36B006220BF /* MMNFTProvider.swift in Sources */,
+				829A0E922895311D006220BF /* MMScanView.swift in Sources */,
 				829A0E56289415CB006220BF /* MMHomeHeaderView.swift in Sources */,
+				829A0E9428954148006220BF /* MMCameraPreview.swift in Sources */,
 				829A0E622894555F006220BF /* MMActionHelper.swift in Sources */,
 				829A0E66289457AB006220BF /* MMHomeNFTListView.swift in Sources */,
 				829A0E3A2893F25B006220BF /* MMDefine.swift in Sources */,
@@ -499,6 +510,7 @@
 				829A0E0C2893EF06006220BF /* MetaMaskMain.swift in Sources */,
 				829A0E6C28945EB9006220BF /* MMHomeTabModel.swift in Sources */,
 				829A0E712895026A006220BF /* MMTokenModel.swift in Sources */,
+				829A0E9028952F3B006220BF /* MMTokenDetailHeaderView.swift in Sources */,
 				829A0E5E28945373006220BF /* MMHomeAction.swift in Sources */,
 				829A0E7328950271006220BF /* MMNFTModel.swift in Sources */,
 				829A0E522893F61B006220BF /* MMHomeView.swift in Sources */,
@@ -661,8 +673,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaMaskApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G77ZRMVS8N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera just for demo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -690,8 +704,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaMaskApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G77ZRMVS8N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera just for demo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
