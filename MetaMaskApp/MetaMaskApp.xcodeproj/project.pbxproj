@@ -36,6 +36,8 @@
 		829A0E9028952F3B006220BF /* MMTokenDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E8F28952F3B006220BF /* MMTokenDetailHeaderView.swift */; };
 		829A0E922895311D006220BF /* MMScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E912895311D006220BF /* MMScanView.swift */; };
 		829A0E9428954148006220BF /* MMCameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E9328954148006220BF /* MMCameraPreview.swift */; };
+		829A0E962895588E006220BF /* MMTokenEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E952895588E006220BF /* MMTokenEnvironment.swift */; };
+		829A0E982895589A006220BF /* MMNFTEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A0E972895589A006220BF /* MMNFTEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		829A0E8F28952F3B006220BF /* MMTokenDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenDetailHeaderView.swift; sourceTree = "<group>"; };
 		829A0E912895311D006220BF /* MMScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMScanView.swift; sourceTree = "<group>"; };
 		829A0E9328954148006220BF /* MMCameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCameraPreview.swift; sourceTree = "<group>"; };
+		829A0E952895588E006220BF /* MMTokenEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTokenEnvironment.swift; sourceTree = "<group>"; };
+		829A0E972895589A006220BF /* MMNFTEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMNFTEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,8 @@
 				829A0E5D28945373006220BF /* MMHomeAction.swift */,
 				829A0E6B28945EB9006220BF /* MMHomeTabModel.swift */,
 				829A0E6D28946BC0006220BF /* MMHomeTabEnvironment.swift */,
+				829A0E952895588E006220BF /* MMTokenEnvironment.swift */,
+				829A0E972895589A006220BF /* MMNFTEnvironment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +501,7 @@
 				829A0E6E28946BC0006220BF /* MMHomeTabEnvironment.swift in Sources */,
 				829A0E5C28945244006220BF /* MMHomeTabContainerView.swift in Sources */,
 				829A0E3E2893F36B006220BF /* MMNFTProvider.swift in Sources */,
+				829A0E962895588E006220BF /* MMTokenEnvironment.swift in Sources */,
 				829A0E922895311D006220BF /* MMScanView.swift in Sources */,
 				829A0E56289415CB006220BF /* MMHomeHeaderView.swift in Sources */,
 				829A0E9428954148006220BF /* MMCameraPreview.swift in Sources */,
@@ -515,6 +522,7 @@
 				829A0E7328950271006220BF /* MMNFTModel.swift in Sources */,
 				829A0E522893F61B006220BF /* MMHomeView.swift in Sources */,
 				829A0E7728950DE6006220BF /* MMTokenCell.swift in Sources */,
+				829A0E982895589A006220BF /* MMNFTEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

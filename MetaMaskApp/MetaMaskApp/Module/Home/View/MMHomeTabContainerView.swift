@@ -9,6 +9,13 @@ import SwiftUI
 
 struct MMHomeTabContainerView: View {
     @ObservedObject var obtab: MMHomeTabEnvironment = MMHomeTabEnvironment()
+    @ObservedObject var tokenList: MMTokenEnvironment = MMTokenEnvironment()
+    @ObservedObject var NFTList: MMNFTEnvironment = MMNFTEnvironment()
+    
+    init () {
+        // initial data before request for network
+        tokenList.list = MMTokenStaticList
+    }
     
     var body: some View {
         VStack(spacing: 0) {
@@ -20,19 +27,30 @@ struct MMHomeTabContainerView: View {
             
             TabView(selection: $obtab.tab) {
                 MMHomeTokenListView()
+                    .environmentObject(tokenList)
                     .tag(MMHomeTabToken)
                 MMHomeNFTListView()
+                    .environmentObject(NFTList)
                     .tag(MMHomeTabNFT)
             }
             .tabViewStyle(
                 PageTabViewStyle(indexDisplayMode: .never))
-        }.ignoresSafeArea()
+        }
+        .onAppear() {
+            MMTokenProvider().loadTokenList { data in
+                tokenList.list = data
+            }
+            MMNFTProvider().loadNFTList { data in
+                NFTList.list = data
+            }
+        }
+        .ignoresSafeArea()
     }
 }
 
 struct MMHomeTabSelectionView: View {
-    @EnvironmentObject var selection: MMHomeTabEnvironment
     @Namespace private var effect
+    @EnvironmentObject var selection: MMHomeTabEnvironment
     
     var body: some View {
         HStack {

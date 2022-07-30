@@ -8,26 +8,24 @@
 import SwiftUI
 
 struct MMHomeTokenListView: View {
+    @EnvironmentObject var env: MMTokenEnvironment
+    
     private let itemsColumn: [GridItem] =
         Array(repeating: .init(.flexible()), count: 1)
-    @State private var list: [MMTokenModel] = [MMTokenModel]()
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: itemsColumn, spacing: 0) {
-                ForEach(list) { item in
+                ForEach(env.list) { item in
                     
-                    NavigationLink(destination: MMTokenDetailView(token: item)) {
+                    NavigationLink(
+                        destination: MMTokenDetailView(token: item)
+                    ) {
                         MMTokenCell(item: item)
                     }
                 }
             }
         }
         .ignoresSafeArea()
-        .onAppear() {
-            MMTokenProvider().loadTokenList { data in
-                self.list = data
-            }
-        }
     }
 }

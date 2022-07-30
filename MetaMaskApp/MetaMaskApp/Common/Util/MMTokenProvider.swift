@@ -7,13 +7,16 @@
 
 import Foundation
 
-//// TODO: TQ replace from json
-//let MMTokenList = [
-//    MMTokenModel(name: "ETH", price: "$243.4", avatar: "arrow.down"),
-//    MMTokenModel(name: "DIP", price: "$243.4", avatar: "arrow.down"),
-//    MMTokenModel(name: "BTC", price: "$243.4", avatar: "arrow.down"),
-//    MMTokenModel(name: "ERP", price: "$243.4", avatar: "arrow.down")
-//]
+let MMTokenStaticList = [
+    MMTokenModel(name: "Bitcoin", priceUsd: "24022.293929"),
+    MMTokenModel(name: "Ethereum", priceUsd: "1704.5334"),
+    MMTokenModel(name: "Tether", priceUsd: "0.999534"),
+    MMTokenModel(name: "USD Coin", priceUsd: "0.998432"),
+    MMTokenModel(name: "BNB", priceUsd: "289.23774"),
+    MMTokenModel(name: "Cardano", priceUsd: "0.52941715"),
+    MMTokenModel(name: "Binance USD", priceUsd: "0.999432425"),
+    MMTokenModel(name: "XRP", priceUsd: "0.37222718432"),
+]
 
 struct MMTokenList: Codable {
     var data: [MMTokenModel]
