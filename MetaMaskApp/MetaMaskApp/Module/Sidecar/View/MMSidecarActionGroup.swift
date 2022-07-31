@@ -13,7 +13,7 @@ struct MMSidecarActionGroup: View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(spacing: 0) {
                 Spacer()
-                ForEach(MMSidecarActionGroupList) { item in
+                ForEach(MMSidecarActionGroupListModel) { item in
                     Button {
                         
                     } label: {

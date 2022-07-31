@@ -31,22 +31,22 @@ let MMStringSidecarNavWallet: String = "钱包"
 let MMStringSidecarNavActivity: String = "活动"
 
 // Action
-let MMHomeActionList = [
+let MMHomeActionListModel = [
     MMHomeAction(title: MMStringActionReceive, icon: Image(systemName: "arrow.down")),
     MMHomeAction(title: MMStringActionBuy, icon: Image(systemName: "creditcard")),
     MMHomeAction(title: MMStringActionSend, icon: Image(systemName: "arrow.up.right")),
     MMHomeAction(title: MMStringActionSwap, icon: Image(systemName: "rectangle.2.swap"))
 ]
-let MMHomeTabList = [
+let MMHomeTabListModel = [
     MMHomeTabModel(title: MMStringHomeTabToken),
     MMHomeTabModel(title: MMStringHomeTabNFT)
 ]
-let MMTokenDetailActionList = [
+let MMTokenDetailActionListModel = [
     MMHomeAction(title: MMStringActionReceive, icon: Image(systemName: "arrow.down")),
     MMHomeAction(title: MMStringActionSend, icon: Image(systemName: "arrow.up.right")),
     MMHomeAction(title: MMStringActionSwap, icon: Image(systemName: "rectangle.2.swap"))
 ]
-let MMSidecarActionGroupList = [
+let MMSidecarActionGroupListModel = [
     MMHomeAction(title: MMStringActionWalletSend, icon: Image(systemName: "arrow.up.forward")),
     MMHomeAction(title: MMStringActionWalletCharge, icon: Image(systemName: "arrow.down.to.line"))
 ]

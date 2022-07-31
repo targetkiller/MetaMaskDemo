@@ -34,7 +34,7 @@ struct MMTokenDetailHeaderView: View {
 struct MMTokenDetailHeaderActionGroup: View {
     var body: some View {
         HStack(spacing: 26) {
-            ForEach(MMTokenDetailActionList) { item in
+            ForEach(MMTokenDetailActionListModel) { item in
                 MMHomeHeaderAction(model: item)
             }
         }

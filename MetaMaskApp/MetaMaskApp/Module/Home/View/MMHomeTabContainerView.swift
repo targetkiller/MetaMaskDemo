@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct MMHomeTabContainerView: View {
-    @ObservedObject var obtab: MMHomeTabEnvironment = MMHomeTabEnvironment()
-    @ObservedObject var tokenList: MMTokenEnvironment = MMTokenEnvironment()
-    @ObservedObject var NFTList: MMNFTEnvironment = MMNFTEnvironment()
-    
-    init () {
-        // initial data before request for network
-        tokenList.list = MMTokenStaticList
-    }
+    @StateObject var obtab: MMHomeTabEnvironment = MMHomeTabEnvironment()
+    @StateObject var tokenList: MMTokenEnvironment = MMTokenEnvironment()
+    @StateObject var NFTList: MMNFTEnvironment = MMNFTEnvironment()
     
     var body: some View {
         VStack(spacing: 0) {
@@ -37,6 +32,7 @@ struct MMHomeTabContainerView: View {
                 PageTabViewStyle(indexDisplayMode: .never))
         }
         .onAppear() {
+            tokenList.list = MMTokenStaticList
             MMTokenProvider().loadTokenList { data in
                 tokenList.list = data
             }
@@ -54,9 +50,9 @@ struct MMHomeTabSelectionView: View {
     
     var body: some View {
         HStack {
-            ForEach(0 ..< MMHomeTabList.count, id:\.self) {
+            ForEach(0 ..< MMHomeTabListModel.count, id:\.self) {
                 i in VStack {
-                    Text(MMHomeTabList[i].title)
+                    Text(MMHomeTabListModel[i].title)
                         .font(.system(size: 15, weight: .semibold))
                         .foregroundColor(selection.tab == i ?
                                          Color(MMColorTheme) : Color(MMColorTitle))

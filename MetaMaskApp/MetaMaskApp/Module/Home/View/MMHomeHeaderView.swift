@@ -65,7 +65,7 @@ struct MMHomeHeaderAddress: View {
 struct MMHomeHeaderActionGroup: View {
     var body: some View {
         HStack(spacing: 26) {
-            ForEach(MMHomeActionList) { item in
+            ForEach(MMHomeActionListModel) { item in
                 MMHomeHeaderAction(model: item)
             }
         }
