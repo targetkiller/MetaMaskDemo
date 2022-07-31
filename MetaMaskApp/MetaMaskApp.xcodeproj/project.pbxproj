@@ -102,6 +102,7 @@
 		829A0E9D28959899006220BF /* MMSidecarActionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMSidecarActionGroup.swift; sourceTree = "<group>"; };
 		829A0E9F289598B3006220BF /* MMSidecarNavigationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMSidecarNavigationList.swift; sourceTree = "<group>"; };
 		829A0EA52895AC0A006220BF /* UINavigationController+MetaMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+MetaMask.swift"; sourceTree = "<group>"; };
+		829A0EA7289621BE006220BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +153,7 @@
 		829A0E0A2893EF06006220BF /* MetaMaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				829A0EA7289621BE006220BF /* Info.plist */,
 				829A0E0B2893EF06006220BF /* MetaMaskMain.swift */,
 				829A0E6F28950259006220BF /* Model */,
 				829A0E362893F149006220BF /* Common */,
@@ -704,6 +706,7 @@
 				DEVELOPMENT_TEAM = 5LXH69K3C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetaMaskApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera just for demo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -735,6 +738,7 @@
 				DEVELOPMENT_TEAM = 5LXH69K3C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetaMaskApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera just for demo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
